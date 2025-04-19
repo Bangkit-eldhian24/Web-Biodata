@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.profile-img {
+    width: 150px; /* ukuran gambar */
+    height: 150px;
+    border-radius: 50%; /* BIKIN BULAT */
+    object-fit: cover; /* biar foto gak gepeng */
+    border: 3px solid #ffffff; /* kasih garis putih pinggir (opsional) */
+    margin-bottom: 10px; /* jarak ke teks di bawahnya */
+   
+    .person-icon {
+        width: 24px; /* ukuran icon kecil */
+        height: 24px;
+        vertical-align: middle; /* supaya sejajar tengah dengan teks */
+        margin-right: 8px; /* kasih jarak dikit ke kanan */
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+}
+.bio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.person-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.bio-text p {
+    margin: 2px 0;
+    line-height: 1.2;
+}
+
+
+/* ini gambar icon address */
+.address {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* telp */
+.telp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.hobi-gambar {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    background-image: url('forrestpas.jpg'); /* Ganti 'header-bg.jpg' ke file gambar kamu */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000; /* Biar teks tetap kelihatan */
+    padding: 50px 50px;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* <-- buat gerakan halus */
+}
+
+/* Efek saat hover */
+section:hover {
+    transform: scale(1.02); /* Membesarkan sedikit */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar */
+}
+
+/* Ini buat background gambar pemandangannnn */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('pine.avif') no-repeat center center fixed;
+    background-size: cover;
+}
+section {
+    background: rgba(255, 255, 255, 0.2); /* transparan putih */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Efek blur di belakang */
+    -webkit-backdrop-filter: blur(10px); /* Untuk Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Biar ada efek border kaca */
+}
+
+
+h2 {
+    color: #35424a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bangkit {
+    width: 120px; /* ini ukuran lebar gambar */
+    height: 120px; /* ini ukuran tinggi gambar */
+    border-radius: 50%; /* biar jadi bulat */
+    object-fit: cover; /* biar fotonya gak ketarik aneh */
+    border: 4px solid white; /* garis putih di pinggir */
+    margin-bottom: 10px; /* jarak ke bawah */
+}
