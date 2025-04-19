@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Bangkit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="bangkit.jpg" alt="Profil" class="bangkit">
+        <h1>Bangkit Eldhian Pranata Pangestu</h1>
+        <p>RPL | SISWA SMKN 4 BOJONEGORO</p>
+    </header>
+    
+    
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Halo saya Bangkit asal saya dari bojonegoro dan saya sekolah di SMKN 4 BOJONEGORO dan saya berumur 16 tahun.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Bio Data</h2>
+        <ul>
+            <li class="bio-item">
+                <img src="user.png" alt="Profil" class="person-icon">
+                <div class="Data Personal">
+                    <p><strong>Nama:</strong> Bangkit Eldhian Pranata Pangestu</p>
+                    <p><strong>Umur:</strong> 16 Tahun</p>
+                    <p><strong>Agama:</strong> Islam</p>
+                   <p><strong> Hobi: <a href="#hobi-container">Bermain Game</a> dan Bersepeda </strong></p>
+                </div>
+            </li>
+            
+                <img src="home.png" alt="alamat" class="address">
+                Alamat : Jln.Ahmad Yani Ds.Mojodeso RT 08 RW 02 Kec.Kapas Kab.Bojonegoro</li>
+            <li>
+                <img src="phone-call.png" alt="telp" class="telp">
+                No Telp/Wa : +62 821-3168-8434 </li>
+        </ul>
+    </section>
+
+               <!-- Kontainer Baru Untuk Gambar Hobi -->
+<section id="hobi-container">
+    <h2> Contoh game </h2>
+    <img src="rucoy.jpg" alt="Gambar Bermain Game" class="hobi-gambar">
+</section>
+
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Email: <a href="mailto:email@anda.com">bangkiteldhianpp.com</a></p>
+        <p>Telepon: +62 821-3168-8434 </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bangkit EP. hi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('section');
+    
+            function revealSection() {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+    
+                    if (sectionTop < windowHeight - 100) {
+                        section.classList.add('show');
+                    } else {
+                        section.classList.remove('show');
+                    }
+                });
+            }
+    
+            window.addEventListener('scroll', revealSection);
+            revealSection(); // supaya pas reload juga langsung ngecek
+        });
+    </script>
+    
+    
+
+
+</body>
+</html>
